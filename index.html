@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas con Progreso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <h1>Lista de Tareas con Progreso</h1>
+
+        
+        <section class="counter-section">
+            <div class="counter-card">
+                <span class="counter-label">Total de tareas</span>
+                <span id="total-tasks" class="counter-value">0</span>
+            </div>
+            <div class="counter-card completed">
+                <span class="counter-label">Completadas</span>
+                <span id="completed-tasks" class="counter-value">0</span>
+            </div>
+            <div class="counter-card pending">
+                <span class="counter-label">Pendientes</span>
+                <span id="pending-tasks" class="counter-value">0</span>
+            </div>
+        </section>
+
+       
+        <form id="todo-form" class="todo-form">
+            <input type="text" id="task-input" placeholder="Escribe una tarea..." required>
+            <button type="submit">Agregar</button>
+        </form>
+
+        
+        <ul id="task-list" class="task-list"></ul>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
